@@ -1,0 +1,49 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.4rem;
+  /* border: 1px solid black; */
+  /* box-shadow: 1px 17px 16px -11px #FFCC70; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #22668d;
+  flex-wrap: wrap;
+}
+
+.navbar span {
+  cursor: pointer;
+}
+
+.left_sec {
+  font-size: 1.2rem;
+}
+
+.right_sec {
+  display: flex;
+  column-gap: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #22668d;
+}
+
+a:hover,
+.left_sec:hover {
+  color: #ffcc70;
+  border-bottom: 1px solid #ffcc70;
+}
+
+.contact_btn a {
+  border: 1px solid #22668d;
+  padding: 0.2rem 0.6rem;
+  border-radius: 25px;
+}
+
+.contact_btn a:hover {
+  border-color: #ffcc70;
+}
