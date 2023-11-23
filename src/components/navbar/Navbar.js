@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useState } from "react";
+import Logo from "../logo/Logo";
 
 function Navbar() {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -13,13 +14,7 @@ function Navbar() {
   return (
     <div className={styles.nav_container}>
       <nav className={styles.navbar}>
-        <div className={styles.left_sec}>
-          <span>
-            <NavLink end to={"/"}>
-              {"<RauchRods/>"}
-            </NavLink>
-          </span>
-        </div>
+        <Logo/>
         <div className={styles.right_sec}>
           <span>
             <NavLink end to={"/about"}>

@@ -1,0 +1,15 @@
+.logo {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #22668d;
+}
+
+a:hover,
+.left_sec:hover {
+  color: #ffcc70;
+  border-bottom: 1px solid #ffcc70;
+}

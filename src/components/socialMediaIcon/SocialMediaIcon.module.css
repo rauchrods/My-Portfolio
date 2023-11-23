@@ -1,0 +1,14 @@
+.social_media_icon{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social_media_icon:hover{
+    background-color: white;
+    color: #22668d;
+}

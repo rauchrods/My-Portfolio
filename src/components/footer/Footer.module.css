@@ -1,0 +1,29 @@
+.footer {
+  background-color: #fffadd;
+  background-color: #22668d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0.6rem;
+  row-gap: 20px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer .social_media_icons{
+   display: flex;
+   column-gap: 18px;
+}
+
+.react_statement{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.react_statement svg{
+    font-size: 1.8rem;
+}
