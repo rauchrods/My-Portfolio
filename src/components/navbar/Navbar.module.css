@@ -1,16 +1,19 @@
-.navbar {
+.nav_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #22668d;
   background-color: white;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1.4rem;
   /* border: 1px solid black; */
   /* box-shadow: 1px 17px 16px -11px #FFCC70; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: #22668d;
   flex-wrap: wrap;
 }
 
@@ -45,5 +48,35 @@ a:hover,
 }
 
 .contact_btn a:hover {
+  background-color: #ffcc70;
+  color: white;
   border-color: #ffcc70;
+}
+
+.hamburger_menu {
+  align-items: center;
+  display: none;
+}
+
+.hamburger_menu:hover {
+  cursor: pointer;
+}
+
+.menu_bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: center;
+  padding: 1.4rem 0.8rem;
+  border-top: 1px solid #ffcc70;
+  border-bottom: 1px solid #ffcc70;
+}
+
+@media (width< 600px) {
+  .hamburger_menu {
+    display: flex;
+  }
+  .right_sec {
+    display: none;
+  }
 }
