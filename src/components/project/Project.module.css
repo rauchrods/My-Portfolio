@@ -1,0 +1,50 @@
+.project_container {
+  width: 24rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 7px 8px 16px -1px rgba(0, 0, 0, 0.75);
+}
+
+.project_container > img {
+  width: 100%;
+}
+
+.info_container {
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn_grp {
+  display: flex;
+  column-gap: 12px;
+}
+
+.btn_grp button {
+  padding: 0.3rem 0.8rem;
+  border: none;
+  background-color: #22668d;
+  color: white;
+  font-size: 1.04rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn_grp button:hover {
+  background-color: #ffcc70;
+  color: #22668d;
+}
+
+@media (width<500px) {
+  .project_container {
+    width: 100%;
+  }
+}
