@@ -5,6 +5,7 @@ import exerciseTracker from "../assets/images/exercise-tracker.png";
 import toDos from "../assets/images/to-dos.png";
 import investmentCalculator from "../assets/images/investment-calculator.png";
 import tictactoe from "../assets/images/tictactoe.png";
+import memeGenerator from '../assets/images/meme-generator.png'
 
 export const myProjects = [
   {
@@ -68,5 +69,13 @@ export const myProjects = [
     image: tictactoe,
     websiteUrl: "https://tic-tact-toe-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/tic-tac-toe",
+  },
+  {
+    id: "r8",
+    title: "Random-Meme-Generator",
+    description: "A web page which generates random meme images which are trending. It uses a free open source api to fetch those memes.",
+    image: memeGenerator,
+    websiteUrl: "https://meme-generator-rauch.netlify.app/",
+    githubLink: "https://github.com/rauchrods/Meme-Generator",
   },
 ];
