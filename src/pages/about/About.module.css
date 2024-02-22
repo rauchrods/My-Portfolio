@@ -1,0 +1,12 @@
+.about_sec{
+    /* margin: 5rem 0 0; */
+    text-decoration:wavy;
+    padding: 0.4rem;
+    background:  linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    display: inline-block;
+    margin: 5rem auto;
+    cursor: pointer;
+}
+
+/* .about_sec>embed{
+} */
