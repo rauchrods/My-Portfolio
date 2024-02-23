@@ -15,6 +15,7 @@ function Header() {
       </div>
       <AnimatedSkills/>
       <img src={avatar} alt="avatar description" />
+      <h2>{'<Rauch Rodrigues/>'}</h2>
       <img src={decicesImg} alt="description of decives" />
     </header>
   );
