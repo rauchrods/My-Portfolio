@@ -10,8 +10,8 @@ function Projects() {
   return (
     <>
       <Navbar />
-      <DisplayProjects title={'My React Projects'} projects={myProjects} type={'r'}/>
-      <DisplayProjects title={'My VanilaJS Projects'} projects={myProjects} type={'js'}/>
+      <DisplayProjects title={'My React Projects'} projects={myProjects} type={'react'}/>
+      <DisplayProjects title={'My VanilaJS Projects'} projects={myProjects} type={'vanila'}/>
       <Footer />
     </>
   );

@@ -7,7 +7,7 @@ function DisplayProjects({ title, projects, type }) {
       <h2>{title}</h2>
       <div className={styles.projects_container}>
         {projects.map((project) => {
-          if (project.id.includes(type)) {
+          if (project.type === type) {
             return <Project {...project} key={project.id} />;
           }
           return null;

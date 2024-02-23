@@ -7,87 +7,113 @@ import investmentCalculator from "../assets/images/investment-calculator.png";
 import tictactoe from "../assets/images/tictactoe.png";
 import memeGenerator from "../assets/images/meme-generator.png";
 import password_gen from "../assets/images/password_gen.png";
+import currency_convertor from "../assets/images/currency-convertor-img.png";
+
 
 export const myProjects = [
   {
-    id: "r1",
+    id: "",
+    title: "Currency Converter",
+    description:
+      "currency converter between all the available currency type options in the world",
+    image: currency_convertor,
+    websiteUrl: "https://currency-converte-rauch.netlify.app/",
+    githubLink: "https://github.com/rauchrods/currency-convertor",
+    type: "react",
+  },
+
+  {
+    id: "",
     title: "Random-Meme-Generator",
     description:
       "A web page which generates random meme images which are trending. It uses a free open source api to fetch those memes.",
     image: memeGenerator,
     websiteUrl: "https://meme-generator-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/Meme-Generator",
+    type: "react",
   },
 
   {
-    id: "r2",
+    id: "",
     title: "Password-Generator",
     description: "Random password generator which has basic filters",
     image: password_gen,
     websiteUrl: "https://password-generator-rauch.netlify.app",
     githubLink: "https://github.com/rauchrods/password-generator-react",
+    type: "react",
   },
   {
-    id: "r3",
+    id: "",
     title: "Place Picker",
     description:
       "This websites displays a wide array of beautiful destination places which you can select and add it to your list. This will be saved next time you visit again the places are also sorted based on your geo location",
     image: placepickerImg,
     websiteUrl: "https://place-picker-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/Place-Picker",
+    type: "react",
   },
   {
-    id: "r4",
+    id: "",
     title: "Count Down Game",
     description:
       "this website displays different level-wise count down challenges where you have to stop the time as close to the timer if you exceed the time u are disqualified. Final score will be displayed",
     image: countdownTimer,
     websiteUrl: "https://countdown-game-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/count-down-game",
+    type: "react",
   },
 
   {
-    id: "r5",
+    id: "",
     title: "Exercise Tracker",
     description:
       "This website is made with MERN stack where we can add users and then we can add exercises for the users present in the database. also u can do basic CRUD operation on these exercises and users",
     image: exerciseTracker,
     websiteUrl: "",
     githubLink: "https://github.com/rauchrods/exercise-tracker",
+    type: "react",
   },
   {
-    id: "r6",
+    id: "",
     title: "To-Dos",
     description:
       "In this website you can add to do event and then view the details and also add tasks to that particular event and delete the to-do event",
     image: toDos,
     websiteUrl: "https://to-dos-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/to-dos",
+    type: "react",
   },
   {
-    id: "r7",
+    id: "",
     title: "Investment Calculator",
     description:
       "In this website you get a breakdown of your investment return based on the input form ",
     image: investmentCalculator,
     websiteUrl: "https://investment-calculator-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/investment-calculator",
+    type: "react",
   },
   {
-    id: "r8",
+    id: "",
     title: "Tic Tac Toe",
     description: "you can play tic tac toe game",
     image: tictactoe,
     websiteUrl: "https://tic-tact-toe-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/tic-tac-toe",
+    type: "react",
   },
   {
-    id: "r9",
+    id: "",
     title: "Clothing Shop",
     description:
       "This websites displays a wide array of beautiful clothing apparels which you can select and add in cart. you can go to the cart and update the quantities from there as well",
     image: clothShopImg,
     websiteUrl: "https://cloth-shop-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/cloth-shop",
+    type: "react",
   },
 ];
+
+myProjects.forEach((project, index) => {
+  project.id = `${project.type}-${index + 1}`;
+});
