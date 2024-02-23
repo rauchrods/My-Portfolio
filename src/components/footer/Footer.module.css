@@ -27,3 +27,8 @@
 .react_statement svg{
     font-size: 1.8rem;
 }
+
+.date_time_sec{
+  display: flex;
+  column-gap: 1.5rem;
+}
