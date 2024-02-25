@@ -1,0 +1,33 @@
+.github_page {
+  margin-top: 4rem;
+  background-color: #0d1117;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.github_page img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.4rem;
+}
+
+.followers_sec span{
+    margin: 0 0.5rem;
+}
+
+.details a{
+    background-color: rgb(29, 83, 81);
+    padding: 5px 12px;
+    border-radius: 12px;
+    color: white;
+}

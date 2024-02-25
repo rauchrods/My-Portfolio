@@ -29,7 +29,7 @@ function Footer() {
           <FaLinkedin />
         </SocialMediaIcon>
       </div>
-      <span>Made by me © 2024</span>
+      <span>Made by Rauch Rodrigues © 2024</span>
       <span className={styles.react_statement}>
         Made with <FaReact />
       </span>
