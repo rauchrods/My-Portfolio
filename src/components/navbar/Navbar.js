@@ -62,6 +62,7 @@ function Navbar() {
             <NavLink
               to={"/about"}
               className={({ isActive }) => (isActive ? styles["myactive"] : "")}
+              onClick = {menuClickHandler}
             >
               About
             </NavLink>
@@ -70,6 +71,7 @@ function Navbar() {
             <NavLink
               to={"/projects"}
               className={({ isActive }) => (isActive ? styles["myactive"] : "")}
+              onClick = {menuClickHandler}
             >
               Projects
             </NavLink>
@@ -78,6 +80,7 @@ function Navbar() {
             <NavLink
               to={"/github"}
               className={({ isActive }) => (isActive ? styles["myactive"] : "")}
+              onClick = {menuClickHandler}
             >
               Github
             </NavLink>
@@ -86,6 +89,7 @@ function Navbar() {
             <NavLink
               to={"/contact"}
               className={({ isActive }) => (isActive ? styles["myactive"] : "")}
+              onClick = {menuClickHandler}
             >
               Contact Me
             </NavLink>
