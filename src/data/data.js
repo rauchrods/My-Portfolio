@@ -9,6 +9,11 @@ import memeGenerator from "../assets/images/meme-generator.png";
 import password_gen from "../assets/images/password_gen.png";
 import currency_convertor from "../assets/images/currency-convertor-img.png";
 import todos from "../assets/images/todos.png";
+import meshop from "../assets/images/meShop.png";
+import excelClone from "../assets/images/excelClone.png";
+import kanban from "../assets/images/kanban.png";
+
+
 
 export const myProjects = [
   {
@@ -110,6 +115,50 @@ export const myProjects = [
     websiteUrl: "https://cloth-shop-rauch.netlify.app/",
     githubLink: "https://github.com/rauchrods/cloth-shop",
     type: "react",
+  },
+
+  {
+    title: "ME-Shop (shopping website)",
+    description:
+      `Shopping website which have features such as sign-up, login, my-profile section, homepage, cart section
+       on sign-up it stores the users details and can be logged in later anytime by storing users in browser local storage
+       Saved user details can be edited in my-profile section. Products are fetched through an API these products can be
+      filtered based on rating and price. It can be added and removed from cart as well.
+      Added products are saved in cart and can be checked-out buy razor-pay payment session`,
+    image: meshop,
+    websiteUrl: "https://rauchrods.github.io/Me-Shop-shopping-Site/",
+    githubLink: "https://github.com/rauchrods/Me-Shop-shopping-Site",
+    type: "vanila",
+  },
+
+  {
+    title: "Excel Clone",
+    description:
+      `Responsive UI of excel clone Designed and created using HTML CSS (FlexBox) for all device compatibility
+       100 rows by 26 column grid/ cells is created which can be used to do major operations like text and styling
+       Multiple sheets can be added for the same file each of 100*26 grid cells
+       Upload and download feature is also provided
+       Also Local storage is implemented i.e cells used will be saved in the browser local storage and when sheets are
+      reloaded the data is not lost`,
+    image: excelClone,
+    websiteUrl: "https://rauchrods.github.io/Excel-Clone/",
+    githubLink: "https://github.com/rauchrods/Excel-Clone",
+    type: "vanila",
+  },
+
+  {
+    title: "Kanban Task Management website",
+    description:
+      `Responsive UI Designed and created using HTML CSS (FlexBox and Media Query) for all device compatibility
+      Tasks can be created and CRUD Operations can be performed on Tasks
+      Tasks are segregated based on the priority which makes it intuitive to use
+      Search bar is also Implemented to quickly filter out searched tasks
+      Also Local storage is implemented i.e Tasks created will be saved in the browser local storage and when page is
+      reloaded the data is not lost`,
+    image: kanban,
+    websiteUrl: "https://rauchrods.github.io/My-Jira-kanban-Task-Management-System/",
+    githubLink: "https://github.com/rauchrods/My-Jira-kanban-Task-Management-System",
+    type: "vanila",
   },
 ];
 
