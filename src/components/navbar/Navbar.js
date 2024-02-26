@@ -4,7 +4,24 @@ import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useState } from "react";
 import Logo from "../logo/Logo";
 
-
+const navBarItems = [
+  {
+    to: "about",
+    label: "About",
+  },
+  {
+    to: "projects",
+    label: "Projects",
+  },
+  {
+    to: "github",
+    label: "Github",
+  },
+  {
+    to: "contact",
+    label: "Contact",
+  },
+];
 
 function Navbar() {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -18,38 +35,18 @@ function Navbar() {
       <nav className={styles.navbar}>
         <Logo />
         <div className={styles.right_sec}>
-          <span>
-            <NavLink
-              to={"/about"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-            >
-              About
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              to={"/projects"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-            >
-              Projects
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              to={"/github"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-            >
-              Github
-            </NavLink>
-          </span>
-          <span className={styles.contact_btn}>
-            <NavLink
-              to={"/contact"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-            >
-              Contact Me
-            </NavLink>
-          </span>
+          {navBarItems.map((navBarItem) => (
+            <span>
+              <NavLink
+                to={navBarItem.to}
+                className={({ isActive }) =>
+                  isActive ? styles["myactive"] : ""
+                }
+              >
+                {navBarItem.label}
+              </NavLink>
+            </span>
+          ))}
         </div>
         <div className={styles.hamburger_menu} onClick={menuClickHandler}>
           {isMenuClicked ? <AiOutlineMenuUnfold /> : <AiOutlineMenu />}
@@ -58,42 +55,19 @@ function Navbar() {
 
       {isMenuClicked && (
         <div className={styles.menu_bar}>
-          <span>
-            <NavLink
-              to={"/about"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-              onClick = {menuClickHandler}
-            >
-              About
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              to={"/projects"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-              onClick = {menuClickHandler}
-            >
-              Projects
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              to={"/github"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-              onClick = {menuClickHandler}
-            >
-              Github
-            </NavLink>
-          </span>
-          <span className={styles.contact_btn}>
-            <NavLink
-              to={"/contact"}
-              className={({ isActive }) => (isActive ? styles["myactive"] : "")}
-              onClick = {menuClickHandler}
-            >
-              Contact Me
-            </NavLink>
-          </span>
+          {navBarItems.map((navBarItem) => (
+            <span>
+              <NavLink
+                to={navBarItem.to}
+                className={({ isActive }) =>
+                  isActive ? styles["myactive"] : ""
+                }
+                onClick={menuClickHandler}
+              >
+                {navBarItem.label}
+              </NavLink>
+            </span>
+          ))}
         </div>
       )}
     </div>
