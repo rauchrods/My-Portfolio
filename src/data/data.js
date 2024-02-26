@@ -8,11 +8,19 @@ import tictactoe from "../assets/images/tictactoe.png";
 import memeGenerator from "../assets/images/meme-generator.png";
 import password_gen from "../assets/images/password_gen.png";
 import currency_convertor from "../assets/images/currency-convertor-img.png";
-
+import todos from "../assets/images/todos.png";
 
 export const myProjects = [
   {
-    id: "",
+    title: "To-Dos App",
+    description:
+      "To-Dos application which allows you to add to do in the list and also provides you with editing , finishing and deleting the task.The todos are also saved in the local storage so when the website is reloaded the data is not lost",
+    image: todos,
+    websiteUrl: "https://todos-rauch.netlify.app/",
+    githubLink: "https://github.com/rauchrods/todos-react",
+    type: "react",
+  },
+  {
     title: "Currency Converter",
     description:
       "currency converter between all the available currency type options in the world",
@@ -23,7 +31,6 @@ export const myProjects = [
   },
 
   {
-    id: "",
     title: "Random-Meme-Generator",
     description:
       "A web page which generates random meme images which are trending. It uses a free open source api to fetch those memes.",
@@ -34,7 +41,6 @@ export const myProjects = [
   },
 
   {
-    id: "",
     title: "Password-Generator",
     description: "Random password generator which has basic filters",
     image: password_gen,
@@ -43,7 +49,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "Place Picker",
     description:
       "This websites displays a wide array of beautiful destination places which you can select and add it to your list. This will be saved next time you visit again the places are also sorted based on your geo location",
@@ -53,7 +58,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "Count Down Game",
     description:
       "this website displays different level-wise count down challenges where you have to stop the time as close to the timer if you exceed the time u are disqualified. Final score will be displayed",
@@ -64,7 +68,6 @@ export const myProjects = [
   },
 
   {
-    id: "",
     title: "Exercise Tracker",
     description:
       "This website is made with MERN stack where we can add users and then we can add exercises for the users present in the database. also u can do basic CRUD operation on these exercises and users",
@@ -74,7 +77,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "To-Dos",
     description:
       "In this website you can add to do event and then view the details and also add tasks to that particular event and delete the to-do event",
@@ -84,7 +86,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "Investment Calculator",
     description:
       "In this website you get a breakdown of your investment return based on the input form ",
@@ -94,7 +95,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "Tic Tac Toe",
     description: "you can play tic tac toe game",
     image: tictactoe,
@@ -103,7 +103,6 @@ export const myProjects = [
     type: "react",
   },
   {
-    id: "",
     title: "Clothing Shop",
     description:
       "This websites displays a wide array of beautiful clothing apparels which you can select and add in cart. you can go to the cart and update the quantities from there as well",
