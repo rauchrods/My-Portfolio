@@ -35,8 +35,8 @@ function Navbar() {
       <nav className={styles.navbar}>
         <Logo />
         <div className={styles.right_sec}>
-          {navBarItems.map((navBarItem) => (
-            <span>
+          {navBarItems.map((navBarItem,index) => (
+            <span key={index}>
               <NavLink
                 to={navBarItem.to}
                 className={({ isActive }) =>
@@ -55,8 +55,8 @@ function Navbar() {
 
       {isMenuClicked && (
         <div className={styles.menu_bar}>
-          {navBarItems.map((navBarItem) => (
-            <span>
+          {navBarItems.map((navBarItem, index) => (
+            <span key={index}>
               <NavLink
                 to={navBarItem.to}
                 className={({ isActive }) =>

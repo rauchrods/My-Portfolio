@@ -1,4 +1,41 @@
 .contacts_page {
   margin-top: 5rem;
   margin-bottom: 20rem;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.form input, .form textarea{
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #22668d;
+  width: 400px;
+}
+
+.form button{
+  padding: 4px 22px;
+  border-radius: 8px;
+  border: 1px solid #22668d;
+  font-size: 1.1rem;
+}
+
+@media (width< 500px) {
+  .form input, .form textarea{
+    width: 250px;
+  }
 }
