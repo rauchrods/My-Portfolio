@@ -32,6 +32,7 @@
   border-radius: 8px;
   border: 1px solid #22668d;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 @media (width< 500px) {
@@ -39,3 +40,34 @@
     width: 250px;
   }
 }
+/* HTML: <div class="loader"></div> */
+.loader_container_show, .loader_container_hide{
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loader_container_show{
+  display: flex;
+}
+
+.loader_container_hide{
+  display: none;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: #22668d;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}

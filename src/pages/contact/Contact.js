@@ -10,6 +10,8 @@ function Contact() {
     message: "",
   });
 
+  const [isloader, setIsloader] = useState(false);
+
   const contactInfoHandler = (e) => {
     setContactInfo((prevState) => ({
       ...prevState,
@@ -21,13 +23,14 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setIsloader(true);
     emailjs
       .sendForm("service_y60pu9i", "template_zsrdem9", form.current, {
         publicKey: "O6UI3T8H7rfh27YuD",
       })
       .then(
         () => {
+          setIsloader(false);
           setContactInfo(() => ({
             user_name: "",
             user_email: "",
@@ -96,6 +99,9 @@ function Contact() {
           Send
         </button>
       </form>
+      <div className={styles[`loader_container_${isloader ? "show" : "hide"}`]}>
+        <div className={styles.loader}></div>
+      </div>
     </div>
   );
 }
