@@ -12,10 +12,20 @@ import todos from "../assets/images/todos.png";
 import meshop from "../assets/images/meShop.png";
 import excelClone from "../assets/images/excelClone.png";
 import kanban from "../assets/images/kanban.png";
+import minProjs from "../assets/images/mini-projects.png";
 
 
 
 export const myProjects = [
+  {
+    title: "mini_projects",
+    description:
+      "website which consists a lot of mini projects. These projects clears the basic react concepts useState, useEffect, customHooks etc.",
+    image: minProjs,
+    websiteUrl: "https://miniprojects-rauchrodrigues.netlify.app/",
+    githubLink: "https://github.com/rauchrods/mini_projects",
+    type: "react",
+  },
   {
     title: "To-Dos App",
     description:
