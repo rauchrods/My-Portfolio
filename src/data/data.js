@@ -13,10 +13,18 @@ import meshop from "../assets/images/meShop.png";
 import excelClone from "../assets/images/excelClone.png";
 import kanban from "../assets/images/kanban.png";
 import minProjs from "../assets/images/mini-projects.png";
-
-
+import book_store from "../assets/images/book_store.png";
 
 export const myProjects = [
+  {
+    title: "BookStore MERN Project",
+    description:
+      "This is an initiative to create a centralised book library where users can add, update and delete books. you just need to provide the pdf url link uploaded in some cloud like googlecloud etc. Once added your book will be available to all the viewers",
+    image: book_store,
+    websiteUrl: "https://bookstoall.vercel.app/",
+    githubLink: "https://github.com/rauchrods/BooksForAll",
+    type: "react",
+  },
   {
     title: "mini_projects",
     description:
@@ -129,8 +137,7 @@ export const myProjects = [
 
   {
     title: "ME-Shop (shopping website)",
-    description:
-      `Shopping website which have features such as sign-up, login, my-profile section, homepage, cart section
+    description: `Shopping website which have features such as sign-up, login, my-profile section, homepage, cart section
        on sign-up it stores the users details and can be logged in later anytime by storing users in browser local storage
        Saved user details can be edited in my-profile section. Products are fetched through an API these products can be
       filtered based on rating and price. It can be added and removed from cart as well.
@@ -143,8 +150,7 @@ export const myProjects = [
 
   {
     title: "Excel Clone",
-    description:
-      `Responsive UI of excel clone Designed and created using HTML CSS (FlexBox) for all device compatibility
+    description: `Responsive UI of excel clone Designed and created using HTML CSS (FlexBox) for all device compatibility
        100 rows by 26 column grid/ cells is created which can be used to do major operations like text and styling
        Multiple sheets can be added for the same file each of 100*26 grid cells
        Upload and download feature is also provided
@@ -158,16 +164,17 @@ export const myProjects = [
 
   {
     title: "Kanban Task Management website",
-    description:
-      `Responsive UI Designed and created using HTML CSS (FlexBox and Media Query) for all device compatibility
+    description: `Responsive UI Designed and created using HTML CSS (FlexBox and Media Query) for all device compatibility
       Tasks can be created and CRUD Operations can be performed on Tasks
       Tasks are segregated based on the priority which makes it intuitive to use
       Search bar is also Implemented to quickly filter out searched tasks
       Also Local storage is implemented i.e Tasks created will be saved in the browser local storage and when page is
       reloaded the data is not lost`,
     image: kanban,
-    websiteUrl: "https://rauchrods.github.io/My-Jira-kanban-Task-Management-System/",
-    githubLink: "https://github.com/rauchrods/My-Jira-kanban-Task-Management-System",
+    websiteUrl:
+      "https://rauchrods.github.io/My-Jira-kanban-Task-Management-System/",
+    githubLink:
+      "https://github.com/rauchrods/My-Jira-kanban-Task-Management-System",
     type: "vanila",
   },
 ];
