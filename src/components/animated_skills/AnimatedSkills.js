@@ -1,47 +1,15 @@
 import React, { useState } from "react";
 import styles from "./AnimatedSkills.module.css";
+import { mySkills } from "../../assets/data/myskills";
+
+
 
 function AnimatedSkills() {
-  const skills = [
-    {
-      skill: "<HTML/>",
-      color: "orange",
-    },
-    {
-      skill: "Css",
-      color: "blue",
-    },
-    {
-      skill: "{Javascript}",
-      color: "rgb(223, 226, 34)",
-    },
-    {
-      skill: "<React/>",
-      color: "blue",
-    },
-    {
-      skill: "<NextJs/>",
-      color: "black",
-    },
-    {
-      skill: "Java",
-      color: "red",
-    },
-    {
-      skill: "Flutter",
-      color: "blue",
-    },
-    {
-      skill: "Dart",
-      color: "blue",
-    },
-  ];
-
   const [currentSkill, setCurrentSkill] = useState(0);
 
   const timer = setTimeout(() => {
     setCurrentSkill((prevState) => {
-      if (prevState < skills.length - 1) {
+      if (prevState < mySkills.length - 1) {
         return prevState + 1;
       } else {
         return 0;
@@ -51,14 +19,16 @@ function AnimatedSkills() {
     return () => {
       clearTimeout(timer);
     };
-  }, 1200);
+  }, 800);
 
   return (
     <div
       className={styles.skills_section}
-      style={{ color: skills[currentSkill].color }}
+      style={{ color: mySkills[currentSkill].color }}
     >
-      {skills[currentSkill].skill}
+      <span>{mySkills[currentSkill].skill}</span>
+
+      <span>{mySkills[currentSkill].svg}</span>
     </div>
   );
 }

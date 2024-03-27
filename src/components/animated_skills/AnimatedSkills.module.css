@@ -1,5 +1,13 @@
-.skills_section{
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(223, 226, 34);
+.skills_section {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(223, 226, 34);
+
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    /* border: 1px solid black; */
+    width: 5rem;
+  }
 }

@@ -14,7 +14,7 @@ function Github() {
     fetch("https://api.github.com/users/rauchrods")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setData(data);
       });
   }, []);

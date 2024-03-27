@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.title_wrapper}>
-        <div className={styles.title}>Designer,Frontend Developer</div>
+        <div className={styles.title}>Designer,FullStack Developer</div>
         <div className={styles.description}>
           I design and code beautifully simple things, and I love what I do.
         </div>

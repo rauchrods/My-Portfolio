@@ -5,6 +5,7 @@
   right: 0;
   color: #22668d;
   background-color: white;
+  box-shadow: 0px 12px 14px -11px rgba(0,0,0,0.62);
 }
 
 .navbar {
@@ -13,8 +14,8 @@
   align-items: center;
   padding: 0.8rem 1.4rem;
   /* border: 1px solid black; */
-  /* box-shadow: 1px 17px 16px -11px #FFCC70; */
   flex-wrap: wrap;
+ 
 }
 
 .navbar span {
