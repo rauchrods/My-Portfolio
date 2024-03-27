@@ -56,7 +56,7 @@ export const mySkills = [
     },
     {
       skill: "{Javascript}",
-      color: "rgb(223, 226, 34)",
+      color: "#F7DF1E",
       svg: (
         <svg
           viewBox="0 0 256 256"
