@@ -1,16 +1,20 @@
 import { useParams } from "react-router-dom";
 import styles from "./ProjectDetails.module.css";
 import { myProjects } from "../../data/data";
+import { useState } from "react";
 
 function ProjectDetails() {
   const { id } = useParams();
 
-  let project = {};
-  myProjects.forEach((myproject) => {
-    if (myproject.id === id) {
-      project = { ...myproject };
-    }
-  });
+  const [project, setProject] = useState({});
+
+  useState(() => {
+    myProjects.forEach((myproject) => {
+      if (myproject.id === id) {
+        setProject(myproject);
+      }
+    });
+  }, []);
 
   return (
     <div className={styles.project_details_page}>

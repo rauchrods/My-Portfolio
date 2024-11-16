@@ -5,10 +5,7 @@ function Project({ title, description, image, id, websiteUrl }) {
   const navigate = useNavigate();
 
   function websiteNavigateHandler() {
-    window.open(
-      websiteUrl,
-      "_blank" // <- This is what makes it open in a new window.
-    );
+    window.open(websiteUrl, "_blank", "noopener,noreferrer");
   }
 
   return (
