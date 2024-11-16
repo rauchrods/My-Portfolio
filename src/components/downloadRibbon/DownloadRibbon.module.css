@@ -1,0 +1,69 @@
+.ribbon {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    #32e2c8,
+    /* Your turquoise */ #8a4fff /* Your purple */
+  );
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transform: translateX(calc(100% - 40px));
+  width: 120px;
+  text-decoration: none;
+  animation: pulseRibbon 3s ease-in-out infinite;
+  .icon {
+    font-size: 1.2em;
+    min-width: 24px;
+  }
+  .text {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.ribbon:hover {
+  transform: translateX(0);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  animation: none;
+}
+
+.ribbon:hover .text {
+  opacity: 1;
+}
+
+.ribbon:hover .icon {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes pulseRibbon {
+  0%,
+  100% {
+    transform: translateX(calc(100% - 40px));
+    background: linear-gradient(90deg, #32e2c8, #8a4fff);
+  }
+  50% {
+    transform: translateX(calc(100% - 50px));
+    background: linear-gradient(90deg, #8a4fff, #32e2c8);
+  }
+}
