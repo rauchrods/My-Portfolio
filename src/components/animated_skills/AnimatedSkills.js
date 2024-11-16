@@ -1,25 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./AnimatedSkills.module.css";
 import { mySkills } from "../../assets/data/myskills";
-
-
 
 function AnimatedSkills() {
   const [currentSkill, setCurrentSkill] = useState(0);
 
-  const timer = setTimeout(() => {
-    setCurrentSkill((prevState) => {
-      if (prevState < mySkills.length - 1) {
-        return prevState + 1;
-      } else {
-        return 0;
-      }
-    });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCurrentSkill((prevState) =>
+        prevState < mySkills.length - 1 ? prevState + 1 : 0
+      );
+    }, 900);
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, 800);
+    return () => clearTimeout(timer);
+  }, [currentSkill]);
 
   return (
     <div
@@ -28,7 +22,7 @@ function AnimatedSkills() {
     >
       <span>{mySkills[currentSkill].skill}</span>
 
-      <span>{mySkills[currentSkill].svg}</span>
+      <span className={styles.svg_container}>{mySkills[currentSkill].svg}</span>
     </div>
   );
 }

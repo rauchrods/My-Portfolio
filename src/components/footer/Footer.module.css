@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0.6rem;
+  padding: 2.5rem 0.6rem;
   row-gap: 20px;
 }
 
@@ -13,22 +13,22 @@
   color: white;
 }
 
-.footer .social_media_icons{
-   display: flex;
-   column-gap: 18px;
+.footer .social_media_icons {
+  display: flex;
+  column-gap: 18px;
 }
 
-.react_statement{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.react_statement {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
-.react_statement svg{
-    font-size: 1.8rem;
+.react_statement svg {
+  font-size: 1.8rem;
 }
 
-.date_time_sec{
+.date_time_sec {
   display: flex;
   column-gap: 1.5rem;
 }

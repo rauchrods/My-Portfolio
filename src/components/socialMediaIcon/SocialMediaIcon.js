@@ -2,7 +2,7 @@ import styles from "./SocialMediaIcon.module.css";
 
 function SocialMediaIcon({ children, link }) {
   function navigateHandler() {
-    window.location.href = link;
+    window.open(link, "_blank", "noopener,noreferrer");
   }
   return (
     <div className={styles.social_media_icon} onClick={navigateHandler}>

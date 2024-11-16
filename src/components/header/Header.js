@@ -13,9 +13,9 @@ function Header() {
           I design and code beautifully simple things, and I love what I do.
         </div>
       </div>
-      <AnimatedSkills/>
+      <AnimatedSkills />
       <img src={avatar} alt="avatar description" />
-      <h2>{'<Rauch Rodrigues/>'}</h2>
+      <h2 className={styles.gradient_text}>{"<Rauch Rodrigues/>"}</h2>
       <img src={decicesImg} alt="description of decives" />
     </header>
   );

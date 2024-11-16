@@ -22,7 +22,7 @@ function App() {
         <Route path="github"  element={<Github />} />
         <Route
           path="*"
-          element={<h2 style={{ marginTop: "5rem" }}>Not Found</h2>}
+          element={<h2 style={{ marginTop: "5rem" }}>404 Not Found</h2>}
         />
       </Route>
     </Routes>
