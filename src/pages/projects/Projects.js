@@ -7,7 +7,7 @@ function Projects() {
   return (
     <>
       <DisplayProjects
-        title={"My React Projects"}
+        title={"My FullStack / React Projects"}
         projects={myProjects}
         type={"react"}
       />

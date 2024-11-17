@@ -1,7 +1,8 @@
+import Carousal from "../Carousal/Carousal";
 import styles from "./Project.module.css";
 import { useNavigate } from "react-router-dom";
 
-function Project({ title, description, image, id, websiteUrl }) {
+function Project({ title, description, images, id, websiteUrl }) {
   const navigate = useNavigate();
 
   function websiteNavigateHandler() {
@@ -10,7 +11,10 @@ function Project({ title, description, image, id, websiteUrl }) {
 
   return (
     <div className={styles.project_container}>
-      <img src={image} alt="" />
+      {/* <img src={image} alt={title} /> */}
+      <Carousal
+        images={images}
+      />
       <div className={styles.info_container}>
         <span className={styles.title}>{title}</span>
         <span className={styles.description}>{description}</span>
