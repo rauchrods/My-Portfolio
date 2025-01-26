@@ -14,6 +14,42 @@ import kanban from "../assets/images/kanban.png";
 
 export const myProjects = [
   {
+    title: "Apprise Social Media App",
+    description: `Launching my social media website Apprise (beta stage) fun project 
+You can add posts , like and comment posts get suggested users , follow unfollow them , see their profile , update your profile , see users posts and liked posts in their profile
+
+Techstack: MERN
+storage : cloudinary free tier for image storage
+Deployment: onRender free tier server
+
+Please test it create , like and comment posts , follow / unfollow users , update your profile
+
+Note : if the website is taking a long time to load please wait onrender free server spins down if there is no requests for long time . Wait for a minute and you are good to go`,
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise.png?alt=media&token=85e94921-323e-4979-ba84-0f154ad16ff7",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise1.png?alt=media&token=f306312d-d5e7-4198-811b-c0d51d3a2da2",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise2.png?alt=media&token=e18f74bf-4442-463c-948b-609bd4ee9f20",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise3.png?alt=media&token=462c48c4-997b-4066-89e6-c01cf3058b59",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise4.png?alt=media&token=871b64ce-4877-4181-bd2c-5fcad523381c",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fapprise5.png?alt=media&token=366abc83-cba1-4416-a522-9c7913a4b204",
+    ],
+    websiteUrl: "https://apprise.rauchrodrigues.in/",
+    githubLink: "https://github.com/rauchrods/Apprise-Social-Media",
+    type: "react",
+  },
+  {
+    title: "Sticky Notes App",
+    description:
+      "A simple sticky notes app inspired from  colorfull post it notes which allows you to create, edit and delete notes. Upo can create multiple sticky notes of any color of your choice and place it anywhere on the board.",
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2FStickyNotes.png?alt=media&token=07a33bf1-917b-40a7-94e6-26a13959a8d0",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2FStickyNotes1.png?alt=media&token=220d43c4-4ebb-4bf0-bcfc-9d74676563d1",
+    ],
+    websiteUrl: "https://sticky-notes.rauchrodrigues.in/",
+    githubLink: "https://github.com/rauchrods/Sticky-Notes",
+    type: "react",
+  },
+  {
     title: "BookStore MERN Project",
     description:
       "This is an initiative to create a centralised book library where users can add, update and delete books. you just need to provide the pdf url link uploaded in some cloud like googlecloud etc. Once added your book will be available to all the viewers",
