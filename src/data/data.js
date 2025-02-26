@@ -50,6 +50,21 @@ Note : if the website is taking a long time to load please wait onrender free se
     type: "react",
   },
   {
+    title: "Movies IMDB App",
+    description: `Similar to IMDB this app displays all the popular movies at the current time.
+    Thanks to the free apis provided by TMDB which has millions of movie collections. This also has search functionality so that you can get details of any movie as you search.
+    You also get trending movies based on the searches you make. This is made possible due to database made in appwrite`,
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fnot-imdb-1.png?alt=media&token=e548ad12-26e9-413f-85a5-c8f9bf1b38b5",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fnot-imdb-2.png?alt=media&token=146264e5-c30c-435d-a20a-a916855e0aa6",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fnot-imdb-3.png?alt=media&token=8782f7ea-b59a-4145-8d78-ebcf441e1fae",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fnot-imdb-4.png?alt=media&token=206ac84e-9673-4947-8952-a2d9e4d51348",
+    ],
+    websiteUrl: "https://not-imdb.rauchrodrigues.in/",
+    githubLink: "https://github.com/rauchrods/NotIMDB",
+    type: "react",
+  },
+  {
     title: "BookStore MERN Project",
     description:
       "This is an initiative to create a centralised book library where users can add, update and delete books. you just need to provide the pdf url link uploaded in some cloud like googlecloud etc. Once added your book will be available to all the viewers",

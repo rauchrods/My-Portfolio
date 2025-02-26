@@ -6,12 +6,10 @@ function DisplayProjects({ title, projects, type }) {
     <div className={styles.projects_page}>
       <h2>{title}</h2>
       <div className={styles.projects_container}>
-        {projects.map((project) => {
-          if (project.type === type) {
-            return <Project {...project} key={project.id} />;
-          }
-          return null;
-        })}
+        {projects.map(
+          (project) =>
+            project.type === type && <Project {...project} key={project.id} />
+        )}
       </div>
     </div>
   );
