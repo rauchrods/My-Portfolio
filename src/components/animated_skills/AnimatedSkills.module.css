@@ -2,6 +2,7 @@
   font-size: 2rem;
   font-weight: bold;
   color: rgb(223, 226, 34);
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
