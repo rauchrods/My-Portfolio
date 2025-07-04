@@ -1,11 +1,29 @@
 .about_sec {
   /* margin: 5rem 0 0; */
   text-decoration: wavy;
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   display: inline-block;
-  margin: 5rem auto;
+  margin: 5rem auto 1rem;
   cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
 }
 
+.iframe_container {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
 
+.resume_iframe {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}

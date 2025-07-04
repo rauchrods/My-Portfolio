@@ -10,9 +10,17 @@ function About() {
     <>
       <div
         className={styles.about_sec}
-        onClick={() => redirectHandler("./myresume.pdf")}
+        onClick={() => redirectHandler("https://resume.rauchrodrigues.in/")}
       >
-        Click here to see my Resume
+        Click here to see Full Preview Resume
+      </div>
+      <div className={styles.iframe_container}>
+        <iframe
+          src="https://resume.rauchrodrigues.in/"
+          title="Resume"
+          className={styles.resume_iframe}
+          loading="lazy"
+        />
       </div>
     </>
   );
