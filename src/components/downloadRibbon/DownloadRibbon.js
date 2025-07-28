@@ -5,14 +5,14 @@ import { FiDownload } from "react-icons/fi";
 const DownloadRibbon = () => {
   return (
     <a
-      href="./myresume.pdf"
+      href="./Rauch_Rodrigues_CV_3.1.pdf"
       target="_blank"
       rel="noreferrer"
-      download={"Rauch-Rodrigues-Resume.pdf"}
+      download={"Rauch_Rodrigues_Resume.pdf"}
       className={styles.ribbon}
     >
       <FiDownload className={styles.icon} />
-      <span className={styles.text}>Resume</span>
+      <span className={styles.text}>Download Resume</span>
     </a>
   );
 };

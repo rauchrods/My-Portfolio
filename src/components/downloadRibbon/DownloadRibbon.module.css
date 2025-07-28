@@ -17,7 +17,7 @@
   align-items: center;
   gap: 6px;
   transform: translateX(calc(100% - 40px));
-  width: 120px;
+  width: 180px;
   text-decoration: none;
   animation: pulseRibbon 3s ease-in-out infinite;
   .icon {
