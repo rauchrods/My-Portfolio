@@ -3,17 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
   height: 14rem;
   margin: 0 auto;
   width: 100%;
+  background: linear-gradient(135deg, #e8eaf6 0%, #f3e5f5 100%);
+  overflow: hidden;
 }
 
 .current-image {
-  /* box-shadow: 0px 0px 7px rgb(71, 67, 67); */
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-slider-container:hover .current-image {
+  transform: scale(1.04);
 }
 
 .hide-image {
@@ -22,39 +27,52 @@
 
 .arrow {
   position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   color: white;
-  filter: drop-shadow(0px 0px 5px #22668d);
+  background: rgba(102, 126, 234, 0.75);
+  border-radius: 50%;
+  padding: 0.3rem;
   cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 2;
 }
+
+.arrow:hover {
+  background: rgba(102, 126, 234, 1);
+  transform: scale(1.1);
+}
+
 .arrow-left {
-  left: 1rem;
+  left: 0.75rem;
 }
 
 .arrow-right {
-  right: 1rem;
+  right: 0.75rem;
 }
 
 .circle-indicator {
   display: flex;
   position: absolute;
-  bottom: 0.8rem;
+  bottom: 0.6rem;
+  gap: 0.3rem;
   button {
-    height: 8px;
-    width: 6px;
-    /* border-radius: 50%; */
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
     border: none;
     outline: none;
-    margin: 0.2rem;
     cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
   }
 }
 
 .current-indicator {
-  background-color: #22668d;
+  background-color: #667eea;
+  transform: scale(1.3);
 }
 
 .suppress-indicator {
-  background-color: rgb(212, 212, 212);
+  background-color: rgba(255, 255, 255, 0.6);
 }

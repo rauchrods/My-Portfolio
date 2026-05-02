@@ -4,7 +4,7 @@ import styles from "./DisplayProjects.module.css";
 function DisplayProjects({ title, projects, type }) {
   return (
     <div className={styles.projects_page}>
-      <h2>{title}</h2>
+      <h2 className={styles.section_title}>{title}</h2>
       <div className={styles.projects_container}>
         {projects.map(
           (project) =>

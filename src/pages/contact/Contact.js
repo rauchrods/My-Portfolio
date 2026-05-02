@@ -25,7 +25,7 @@ function Contact() {
     e.preventDefault();
     setIsloader(true);
     emailjs
-      .sendForm("service_y60pu9i", "template_zsrdem9", form.current, {
+      .sendForm("service_e2xjshk", "template_zsrdem9", form.current, {
         publicKey: "O6UI3T8H7rfh27YuD",
       })
       .then(
@@ -41,7 +41,7 @@ function Contact() {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
 
@@ -95,8 +95,8 @@ function Contact() {
             onChange={contactInfoHandler}
           />
         </div>
-        <button type="submit" value="Send">
-          Send
+        <button type="submit" value="Send" disabled={isloader}>
+          {isloader ? "Sending..." : "Send"}
         </button>
       </form>
       <div className={styles[`loader_container_${isloader ? "show" : "hide"}`]}>
