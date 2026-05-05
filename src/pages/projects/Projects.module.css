@@ -1,0 +1,52 @@
+.projects_page {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ── Header ── */
+.page_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 2rem 1rem 0.5rem;
+}
+
+.page_badge {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(34, 102, 141, 0.1);
+  color: #22668d;
+  border: 1px solid rgba(34, 102, 141, 0.2);
+}
+
+.page_title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #1a2e3b;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.page_subtitle {
+  max-width: 480px;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Divider ── */
+.section_divider {
+  width: 80%;
+  max-width: 900px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d0dde6, transparent);
+  margin: 0 auto;
+}
