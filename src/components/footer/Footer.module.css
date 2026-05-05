@@ -1,35 +1,143 @@
+/* ── Footer shell ── */
 .footer {
-  background-color: #fffadd;
-  background-color: #22668d;
-  color: white;
+  background: #0f2233;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 6% 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* ── Top row ── */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ── Brand column ── */
+.brand {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+  max-width: 280px;
+}
+
+.tagline {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+}
+
+/* ── Social icons ── */
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.social_btn {
+  display: flex;
   align-items: center;
-  padding: 2.5rem 0.6rem;
-  row-gap: 20px;
-  text-align: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer a {
-  color: white;
+.social_btn:hover {
+  background: #22668d;
+  color: #fff;
+  border-color: #22668d;
+  transform: translateY(-2px);
 }
 
-.footer .social_media_icons {
+/* ── Nav column ── */
+.nav_col {
   display: flex;
-  column-gap: 18px;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.react_statement {
+.col_heading {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.nav_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.nav_link {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.875rem;
+}
+
+.nav_link:hover {
+  color: #ffcc70;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 2rem 0 1.25rem;
+}
+
+/* ── Bottom bar ── */
+.bottom {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
 }
 
-.react_statement svg {
-  font-size: 1.8rem;
-}
-
-.date_time_sec {
+.made_with {
   display: flex;
-  column-gap: 1.5rem;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.code_icon {
+  color: #ffcc70;
+  font-size: 1rem;
+}
+
+.clock {
+  font-variant-numeric: tabular-nums;
+  font-family: monospace;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 560px) {
+  .top {
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
