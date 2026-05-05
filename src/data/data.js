@@ -14,6 +14,37 @@ import kanban from "../assets/images/kanban.png";
 
 export const myProjects = [
   {
+    title: "Code Bros",
+    description: `Trying to Build my Own LeetCode with a twist of gamification. In this website you can solve coding problems and get points for solving them. You can also see the leaderboard and compete with your friends. This is still in development stage and more features will be added soon`,
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fcode-bros.png?alt=media&token=29635789-f947-494f-81f0-babfbfa1418d",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fcode-bros1.png?alt=media&token=b00cf285-45e0-4724-983d-9dd1b219881e",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fcode-bros2.png?alt=media&token=e2650f3f-a783-4cb5-94aa-0a355ca3e584",
+    ],
+    websiteUrl: "https://code-bros.rauchrodrigues.in/",
+    githubLink: [
+      "https://github.com/rauchrods/code-bros-frontend",
+      "https://github.com/rauchrods/code-bros-backend",
+    ],
+    type: "react",
+  },
+  {
+    title: "Geo Nerd",
+    description: `I've always had an immense interest in geography and world maps — the way borders are drawn, how states and districts are shaped, and the stories they tell. Geo Nerd is my way of turning that passion into something playful and interactive.
+
+This project started as a way to test my own knowledge of Indian geography, and hopefully yours too. Whether you're a geography nerd or just curious, I hope you enjoy it!`,
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fgeo-nerd.png?alt=media&token=e303bc4d-e099-454e-a5a8-f7d9de613925",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fgeo-nerd1.png?alt=media&token=de5dc7ac-1418-4a2a-baed-14f5f0ee482a",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fgeo-nerd2.png?alt=media&token=fdf6cf4a-00b5-469c-8f87-bd7028f562d7",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fgeo-nerd3.png?alt=media&token=beb77bdb-35a2-4c2a-a0d1-5a8f2d74a42a",
+      "https://firebasestorage.googleapis.com/v0/b/socializeme-be1f4.appspot.com/o/Project%20Images%2Fgeo-nerd4.png?alt=media&token=ddd0007e-88ae-4d87-bb21-243c118b484f",
+    ],
+    websiteUrl: "https://geo-nerd.rauchrodrigues.in/",
+    githubLink: "https://github.com/rauchrods/geo-nerd-client",
+    type: "react",
+  },
+  {
     title: "Apprise Social Media App",
     description: `Launching my social media website Apprise (beta stage) fun project 
 You can add posts , like and comment posts get suggested users , follow unfollow them , see their profile , update your profile , see users posts and liked posts in their profile

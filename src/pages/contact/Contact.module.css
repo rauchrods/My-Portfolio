@@ -1,73 +1,172 @@
+/* ── Page Layout ── */
 .contacts_page {
   margin-top: 5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   padding: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
+/* ── Header ── */
+.page_header {
+  text-align: center;
+  max-width: 560px;
+}
+
+.page_header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #22668d;
+}
+
+.page_header p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ── Card ── */
+.form_card {
+  width: 100%;
+  max-width: 620px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(34, 102, 141, 0.12);
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(34, 102, 141, 0.1);
+}
+
+/* ── Form ── */
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
+  gap: 1.25rem;
 }
 
-.form > div {
+/* Side-by-side row for name + email */
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ── Field ── */
+.field {
   display: flex;
   flex-direction: column;
-  row-gap: 0.4rem;
+  gap: 0.4rem;
 }
 
-.form input, .form textarea{
-  padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid #22668d;
-  width: 400px;
+.field label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
 }
 
-.form button{
-  padding: 4px 22px;
-  border-radius: 8px;
-  border: 1px solid #22668d;
-  font-size: 1.1rem;
+.field_icon {
+  color: #22668d;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #e05252;
+}
+
+.field input,
+.field textarea {
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1.5px solid #d0dde6;
+  font-size: 0.9rem;
+  color: #222;
+  background: #f7fafd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #22668d;
+  box-shadow: 0 0 0 3px rgba(34, 102, 141, 0.12);
+  background: #fff;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #aab5be;
+}
+
+/* ── Submit Button ── */
+.submit_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-self: flex-end;
+  padding: 0.65rem 1.8rem;
+  border-radius: 10px;
+  border: none;
+  background: #22668d;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(34, 102, 141, 0.25);
+  min-width: 150px;
 }
 
-@media (width< 500px) {
-  .form input, .form textarea{
-    width: 250px;
+.submit_btn:hover:not(:disabled) {
+  background: #1a5070;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(34, 102, 141, 0.3);
+}
+
+.submit_btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit_btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ── Button Spinner ── */
+.btn_loader {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .contacts_page {
+    padding: 0 5%;
+  }
+
+  .form_card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .form_row {
+    grid-template-columns: 1fr;
+  }
+
+  .submit_btn {
+    align-self: stretch;
   }
 }
-/* HTML: <div class="loader"></div> */
-.loader_container_show, .loader_container_hide{
-  position: fixed;
-  background-color: transparent;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.loader_container_show{
-  display: flex;
-}
-
-.loader_container_hide{
-  display: none;
-}
-
-.loader {
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid lightblue;
-  border-right-color: #22668d;
-  animation: l2 1s infinite linear;
-}
-@keyframes l2 {to{transform: rotate(1turn)}}

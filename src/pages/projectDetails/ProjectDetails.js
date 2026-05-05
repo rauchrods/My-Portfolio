@@ -99,14 +99,28 @@ function ProjectDetails() {
             )}
 
             {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.linkButton}
-              >
-                GitHub Repo
-              </a>
+              Array.isArray(project.githubLink) ? (
+                project.githubLink.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkButton}
+                  >
+                    GitHub Repo {index + 1}
+                  </a>
+                ))
+              ) : (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkButton}
+                >
+                  GitHub Repo
+                </a>
+              )
             )}
           </div>
         </div>
