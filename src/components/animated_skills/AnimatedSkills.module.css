@@ -1,18 +1,19 @@
 .skills_section {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(223, 226, 34);
-  cursor: pointer;
-
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: default;
+}
 
-  .svg_container {
-    height: 5.5rem;
-  }
+.svg_container {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
 
-  svg {
-    /* border: 1px solid black; */
-    width: 5rem;
-  }
+.svg_container svg {
+  width: 3rem;
+  height: 3rem;
 }
