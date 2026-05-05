@@ -13,7 +13,7 @@ function Contact() {
     message: "",
   });
 
-  const [isloader, setIsloader] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [toast, setToast] = useState(null);
 
   const showToast = (message, type = "success") => {
@@ -32,7 +32,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsloader(true);
+    setIsLoading(true);
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -42,7 +42,7 @@ function Contact() {
       )
       .then(
         () => {
-          setIsloader(false);
+          setIsLoading(false);
           setContactInfo({
             user_name: "",
             user_email: "",
@@ -52,7 +52,7 @@ function Contact() {
           showToast("Message sent successfully! I'll get back to you soon.", "success");
         },
         (error) => {
-          setIsloader(false);
+          setIsLoading(false);
           console.log("FAILED...", error.text);
           showToast("Something went wrong. Please try again.", "error");
         },
@@ -132,8 +132,8 @@ function Contact() {
             />
           </div>
 
-          <button type="submit" disabled={isloader} className={styles.submit_btn}>
-            {isloader ? (
+          <button type="submit" disabled={isLoading} className={styles.submit_btn}>
+            {isLoading ? (
               <span className={styles.btn_loader}></span>
             ) : (
               <>

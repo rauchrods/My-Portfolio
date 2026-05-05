@@ -1,33 +1,205 @@
+/* ── Page ── */
 .github_page {
+  min-height: calc(100vh - 4rem);
   margin-top: 4rem;
   background-color: #0d1117;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
-  padding: 1rem;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
 
-.github_page img {
-  width: 200px;
+/* ── Card ── */
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Avatar ── */
+.avatar_wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
+  border: 3px solid #30363d;
+  display: block;
 }
 
-.details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 0.4rem;
+.github_badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: #238636;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  border: 2px solid #161b22;
 }
 
-.followers_sec span{
-    margin: 0 0.5rem;
+/* ── Text ── */
+.name {
+  color: #e6edf3;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0;
+  text-align: center;
 }
 
-.details a{
-    background-color: rgb(29, 83, 81);
-    padding: 5px 12px;
-    border-radius: 12px;
-    color: white;
+.username {
+  color: #7d8590;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.bio {
+  color: #adbac7;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0.25rem 0 0;
+  max-width: 320px;
+}
+
+/* ── Stats ── */
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0 1.25rem;
+}
+
+.stat_icon {
+  color: #7d8590;
+  font-size: 0.95rem;
+}
+
+.stat_value {
+  color: #e6edf3;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat_label {
+  color: #7d8590;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stat_divider {
+  width: 1px;
+  height: 36px;
+  background: #30363d;
+  flex-shrink: 0;
+}
+
+/* ── Meta ── */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #7d8590;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ── CTA Button ── */
+.profile_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background: #238636;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.profile_btn:hover {
+  background: #2ea043;
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+/* ── API note ── */
+.api_note {
+  color: #484f58;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.25rem 0 0;
+}
+
+.api_note code {
+  color: #7d8590;
+  font-family: monospace;
+}
+
+/* ── Skeleton loader ── */
+.skeleton_avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #21262d;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton_line {
+  height: 14px;
+  border-radius: 6px;
+  background: #21262d;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.25rem;
+  }
+
+  .stat {
+    padding: 0 0.75rem;
+  }
 }
