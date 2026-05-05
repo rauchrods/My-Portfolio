@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 
-import avatar from "../../assets/images/mf-avatar.jpg";
+import avatar from "../../assets/images/mf-avatar.jpeg";
 import decicesImg from "../../assets/images/hero-devices.svg";
 import AnimatedSkills from "../animated_skills/AnimatedSkills";
 import { motion } from "framer-motion";
